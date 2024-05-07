@@ -1,0 +1,53 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  color: teal;
+}
+
+a:hover,
+a:focus {
+  color: purple;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.icon {
+  margin: 20px;
+  list-style: none;
+  width: 100px;
+}
+
+.icon > a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.icon a {
+  text-align: center;
+}
+
+.spotlight .icon {
+  width: unset;
+}
+@media screen and (max-width: 480px) {
+  .spotlight .icon {
+    width: 100%;
+  }
+}
