@@ -1,9 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 a {
@@ -14,19 +22,23 @@ a {
 a:hover,
 a:focus {
   color: purple;
-  outline: purple solid 2px;
-  border-radius: 5px;
+  background-color: #f5f5f5;
+  border-radius: 500px;
 }
 
 .wrapper {
-  max-width: 1200px;
   margin: auto;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   position: relative;
-  overflow: hidden;
   background-color: #ffffff;
   opacity: 0.8;
+  display: flex;
+  border-radius: 250px;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
@@ -40,7 +52,8 @@ a:focus {
 .icon {
   margin: 20px;
   list-style: none;
-  width: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .icon > a {
@@ -57,35 +70,4 @@ a:focus {
 .icon a {
   text-align: center;
 }
-
-.spotlight .icon {
-  width: unset;
-}
-@media screen and (max-width: 480px) {
-  .spotlight .icon {
-    width: 100%;
-  }
-}
-
-.diagonal {
-  border-top: 30px solid #eeeeee;
-  rotate: -45deg;
-  position: absolute;
-  width: 1000px;
-}
-
-.d0 {
-  border-color: #3b8dbd;
-  left: -300px;
-}
-
-.d1 {
-  border-color: #01c4a8;
-  left: -330px;
-}
-
-.d2 {
-  left: -360px;
-  border: 10px solid #eeeeee;
-  border-bottom: none;
 }
